@@ -22,21 +22,21 @@ export default {
 
 <style scope>
 .fas {
-  color: red;
+  color: black;
   padding: 5px;
 }
 .task {
   background: #f4f4f4;
-  margin: 5px;
+  margin: 10px 0;
   padding: 10px 20px;
   cursor: pointer;
-}
-.task.reminder {
-  border-left: 5px solid green;
 }
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.task.reminder {
+  border-left: 3px solid rgb(21, 242, 21);
 }
 </style>

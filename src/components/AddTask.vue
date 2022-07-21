@@ -43,7 +43,7 @@ export default {
         return;
       }
       const newTask = {
-        id: Math.floor(Math.random() * 100000),
+        // id gets added by json-server
         text: this.text,
         day: this.day,
         reminder: this.reminder,
@@ -51,7 +51,6 @@ export default {
 
       this.clearFields();
 
-      // Emit
       this.$emit('add-task', newTask);
     },
     clearFields() {
@@ -65,10 +64,11 @@ export default {
 
 <style scoped>
 .add-form {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding: 5px;
 }
 .form-control {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .form-control label {
   display: block;
